@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$S7OPV1u2joG0IXk6bo36sOKvmyjCMT3I7yNc5UN9PVDRlv.ZRIlPC",
+      "id": 1
+    },
+    {
+      "email": "ltv@gmail.com",
+      "password": "$2a$10$Gc/msAueVbebrrFDzksFXeWyzx/aTssI264XmT7n6NXSeixqU4NB6",
+      "firstName": "Tran",
+      "lastName": "Luong",
+      "id": 2
+    },
+    {
+      "email": "luong@gmail.com",
+      "password": "$2a$10$fICdgo0jBW0.0Xr1BJBDQeUqCLJBf.A6sK3.GrT97BagVhlGhVrHK",
+      "firstName": "Tran ",
+      "lastName": "Luong",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "productName": "f",
+      "price": "f",
+      "quantity": "f",
+      "description": "f",
+      "id": 3
+    },
+    {
+      "productName": "dgv",
+      "price": "db",
+      "quantity": "fdb",
+      "description": "fdbsfb",
+      "id": 4
+    },
+    {
+      "description": "c",
+      "quantity": 100,
+      "price": 14567,
+      "productName": "Iphone XX",
+      "id": 5
+    },
+    {
+      "description": "ff",
+      "quantity": 100,
+      "price": 5000,
+      "productName": "Iphone XX",
+      "id": 6
+    },
+    {
+      "description": "ccc",
+      "quantity": 100,
+      "price": 14567,
+      "productName": "f",
+      "id": 7
+    },
+    {
+      "description": "kk",
+      "quantity": 9,
+      "price": 88,
+      "productName": "ll",
+      "id": 8
+    }
+  ]
+}
