@@ -14,6 +14,9 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import SnackBars from '../../components/SnackBar';
 import {useNavigate} from 'react-router-dom'
+import userApi from '../../api/userApi';
+import { Link as LinkRouter } from 'react-router-dom'
+
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -44,28 +47,22 @@ export default function SignUp() {
     const user = {
       firstName: data.get('firstName'),
       lastName: data.get('lastName'),
-      username: data.get('username'),
+      userName: data.get('userName'),
       email: data.get('email'),
       password: data.get('password'),
     };
-
+    // console.log(user);
     signUp(user);
   };
 
+
   const signUp = async (user) => {
-    let res = await fetch('http://localhost:3000/register', {
-      method: 'POST', 
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(user), 
-    },);
-    let data = await res.json();
-    console.log(data);
-    if(res.status ===201){
+    let res = await userApi.createAccount(user);
+    console.log(res)
+    if(res.status ===200){
         setObjectMsg({
           open: true,
-          msg: 'sign up success',
+          msg: res.data,
           statusAlert:"success"
         });
         setTimeout(()=>{
@@ -74,7 +71,7 @@ export default function SignUp() {
     }else{
       setObjectMsg({
         open: true,
-        msg: data,
+        msg: res.data,
         statusAlert:"error",
       })
     }
@@ -124,9 +121,9 @@ export default function SignUp() {
                 <TextField
                   required
                   fullWidth
-                  id="username"
+                  id="userName"
                   label="Username"
-                  name="username"
+                  name="userName"
                   autoComplete="family-name"
                 />
               </Grid>
@@ -163,9 +160,7 @@ export default function SignUp() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
-                </Link>
+              <LinkRouter to="/login" variant="body2">{"Already have an account? Sign in"}</LinkRouter>
               </Grid>
             </Grid>
           </Box>
