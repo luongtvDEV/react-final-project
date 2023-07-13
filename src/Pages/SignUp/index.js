@@ -59,10 +59,10 @@ export default function SignUp() {
   const signUp = async (user) => {
     let res = await userApi.createAccount(user);
     console.log(res)
-    if(res.status ===200){
+    if(res.status ===201){
         setObjectMsg({
           open: true,
-          msg: res.data,
+          msg: res.statusText,
           statusAlert:"success"
         });
         setTimeout(()=>{
@@ -71,7 +71,7 @@ export default function SignUp() {
     }else{
       setObjectMsg({
         open: true,
-        msg: res.data,
+        msg: res.statusText,
         statusAlert:"error",
       })
     }

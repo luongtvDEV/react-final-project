@@ -8,6 +8,7 @@ import User from './Pages/User';
 import AdminPage from './Pages/Admin/AdminPage';
 import Detail from './Pages/Product/Detail';
 import SignUp from './Pages/SignUp';
+import NotFound from './Pages/NotFound';
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,8 @@ function App() {
           <Route path='user' element={<User />} />
 
         </Route>
+        <Route path={"*"} element={<NotFound />}></Route>
+
       </Routes>
     </div>
   );

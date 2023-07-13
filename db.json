@@ -62,6 +62,54 @@
       "firstName": "fdg",
       "lastName": "dg",
       "id": 9
+    },
+    {
+      "email": "jjgjgj@email.com",
+      "password": "$2a$10$McA3V7mBpsbVD/Lumm/9G.u9x5PThWKpwDo78xEmfqKnsRUvjbGyW",
+      "firstName": "thuong",
+      "lastName": "lalal",
+      "userName": "kkqrhnnv",
+      "id": 10
+    },
+    {
+      "email": "1231232@gmail.com",
+      "password": "$2a$10$lZeu88UP.OWyfSJX0gjriurHWbGZ6AvNuuwKTfBkMp5JLVQ.pKKf6",
+      "firstName": "luongtv",
+      "lastName": "luong123",
+      "userName": "tranvanthuong",
+      "id": 11
+    },
+    {
+      "email": "1454154@gmail.com",
+      "password": "$2a$10$qdOrIMkwQDjwrQHfYGF3b.sPyjFLWHnF9.Ni7dPgF8PE8BkOikb7C",
+      "firstName": "12223222",
+      "lastName": "112e323",
+      "userName": "hthththt",
+      "id": 12
+    },
+    {
+      "email": "jgjgjgjjgj@gmail.com",
+      "password": "$2a$10$y52WOgeKZ5fcJkHVhNJmaeKPkvLJF8.N0p1LwETWAo86iUnHserOG",
+      "firstName": "Tran",
+      "lastName": "Thuong",
+      "userName": "1111111111111111111111",
+      "id": 13
+    },
+    {
+      "email": "abcceshjbc@gmail.com",
+      "password": "$2a$10$M99MHqcy4y5.bh1FVl49Ner5lt83YBEX2y.NnYAT8bTKZqSG1G98y",
+      "firstName": "Luongtv",
+      "lastName": "Luong",
+      "userName": "thuongpham12311",
+      "id": 14
+    },
+    {
+      "email": "frdfrdaf@gmail.com",
+      "password": "$2a$10$32hrCusBCjjfGx.zQaW/P.MHu.l.eP5LYrKr/F5y/S719CMUfL.d2",
+      "firstName": "Luongtv",
+      "lastName": "Luong",
+      "userName": "thuongpham12311",
+      "id": 15
     }
   ],
   "products": [
@@ -92,6 +140,20 @@
       "price": 88,
       "productName": "ll",
       "id": 8
+    },
+    {
+      "description": "bfdb",
+      "quantity": 8,
+      "price": 5000,
+      "productName": "Iphone XX",
+      "id": 9
+    },
+    {
+      "description": "Good",
+      "quantity": 123,
+      "price": 5000,
+      "productName": "Iphone XX",
+      "id": 10
     }
   ]
 }
