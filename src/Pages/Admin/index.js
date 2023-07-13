@@ -4,12 +4,24 @@ import LeftMenu from './../../components/LeftMenu';
 // import reducer from '../../store/Reducer';
 // import {intitialState} from '../../store/Reducer';
 // import { SET_DATA, SET_LIST } from '../../store/actions';
-import { CheckLogin } from '../../util';
 import { Outlet } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { AppConsumer } from '../../store';
 
 
 export default function Admin() {
-  // CheckLogin();
+  const [state, dispatch] = AppConsumer();
+  const navigator = useNavigate();
+
+  const CheckLogin = () => {
+    if (sessionStorage.getItem('data') === null) {
+      navigator("/login", { replace: true });
+    }
+  }
+  useEffect(() => {
+    CheckLogin()
+
+  }, [state.isLogin]);
 
   return (
     <>

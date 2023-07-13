@@ -29,3 +29,13 @@ export const GET_ID_PRODUCT=(payload)=>{
         payload
     }
 }
+export const LOGIN1=()=>{
+    return{
+        type: 'LOGIN1',
+    }
+}
+export const LOGOUT=()=>{
+    return{
+        type: 'LOGOUT',
+    }
+}

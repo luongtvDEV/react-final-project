@@ -18,16 +18,53 @@
       "firstName": "Tran ",
       "lastName": "Luong",
       "id": 3
+    },
+    {
+      "email": "1234@gmail.com",
+      "password": "$2a$10$Mvz4LtwSyGupVX.K.MH0F.gLyuQCee85V6hF7ccJ86CUTq9lF7xXe",
+      "firstName": "Van",
+      "lastName": "Thuong",
+      "userName": "12345thuong",
+      "id": 4
+    },
+    {
+      "email": "vdv@gmail.com",
+      "password": "$2a$10$VtNYVK0BUjnFPig8P66kYecoipDZPTx08tY43qnt9y0OsD//nCHr6",
+      "firstName": "fdf",
+      "lastName": "fsf",
+      "userName": "ffasf",
+      "id": 5
+    },
+    {
+      "email": "1@gmail.com",
+      "password": "$2a$10$O728QB4yNDIw00cB95B87eNGRhtExqLQDrEmHSqEq1oC4FuwVS3Ly",
+      "firstName": "Tran",
+      "lastName": "Thuong",
+      "id": 6
+    },
+    {
+      "email": "fdb@gmai.com",
+      "password": "$2a$10$/GQ6Gy4PLGSnxrxNcLXqMOhwpGghrJAxMO234KaF7PhSGmPk/8K9q",
+      "firstName": "frdfdfd",
+      "lastName": "vdvdsgs",
+      "id": 7
+    },
+    {
+      "email": "fdb@gmai.comfrf",
+      "password": "$2a$10$HTek1arXsfXnoNI/ABpjDeNCRvDY/6mBOZzCVmMGso7w85npP6cI6",
+      "firstName": "frdfdfd",
+      "lastName": "vdvdsgs",
+      "id": 8
+    },
+    {
+      "email": "dgdsg@gmail.cpom",
+      "password": "$2a$10$s8fhxt2FcNYKAdmHGVJ.l.65zGWjXZFZlMX5p5H1jP9YgK7b2Fj/a",
+      "firstName": "fdg",
+      "lastName": "dg",
+      "id": 9
     }
   ],
   "products": [
-    {
-      "productName": "f",
-      "price": "f",
-      "quantity": "f",
-      "description": "f",
-      "id": 3
-    },
     {
       "productName": "dgv",
       "price": "db",
@@ -41,13 +78,6 @@
       "price": 14567,
       "productName": "Iphone XX",
       "id": 5
-    },
-    {
-      "description": "ff",
-      "quantity": 100,
-      "price": 5000,
-      "productName": "Iphone XX",
-      "id": 6
     },
     {
       "description": "ccc",

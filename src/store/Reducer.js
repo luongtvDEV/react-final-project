@@ -2,7 +2,8 @@ export const intitialState = {
     data: '',
     list: [],
     toggleMenu: false,
-    idProduct:""
+    idProduct:"",
+    isLogin: false,
 };
 const reducer = (state = intitialState, action) => {
     switch (action.type) {
@@ -34,6 +35,20 @@ const reducer = (state = intitialState, action) => {
             return {
                 ...state,
                 idProduct: action.payload
+            }
+        }
+        case 'LOGIN1': {
+            console.log("heelo")
+            return {
+                ...state,
+                isLogin: true,
+                
+            }
+        }
+        case 'LOGOUT': {
+            return {
+                ...state,
+                isLogin: false
             }
         }
         default: {

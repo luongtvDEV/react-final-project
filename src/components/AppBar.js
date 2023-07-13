@@ -16,7 +16,8 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { AppConsumer } from '../store';
-import { TOGGLE_MENU } from './../store/actions';
+import { LOGOUT, TOGGLE_MENU } from './../store/actions';
+import { useNavigate } from 'react-router-dom'; 
 
 
 
@@ -89,8 +90,14 @@ export default function AppBarAdmin({ setOpenLeftMenu }) {
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
+  const [state, dispatch] =AppConsumer();
+  const navigator= useNavigate();
 
-
+  const handleLogout=()=>{
+    dispatch(LOGOUT());
+    sessionStorage.removeItem('data');
+    navigator("/login",{ replace: true });
+  }
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -108,7 +115,7 @@ export default function AppBarAdmin({ setOpenLeftMenu }) {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      <MenuItem onClick={handleLogout}>Logout</MenuItem>
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
     </Menu>
   );

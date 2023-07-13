@@ -16,6 +16,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom'
 
 import { Link as LinkRouter } from 'react-router-dom'
+import { AppConsumer } from '../../store';
+import { LOGIN1 } from '../../store/actions';
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -35,6 +37,8 @@ const defaultTheme = createTheme();
 
 export default function Login() {
   const navigator = useNavigate();
+  const [state, dispatch] = AppConsumer();
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -61,7 +65,8 @@ export default function Login() {
     let data = await res.json();
     if (res.ok) {
       sessionStorage.setItem('data', JSON.stringify(data));
-      navigator("/", { replace: true });
+      dispatch(LOGIN1(true));
+      navigator("/admin", { replace: true });
     }
   }
   return (
